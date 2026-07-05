@@ -1,40 +1,40 @@
-# Core dependencies - USING VERSIONS THAT ACTUALLY EXIST
-streamlit==1.35.0
-langchain==0.0.354
-langgraph==0.0.20
-chromadb==0.5.23
-sentence-transformers==3.0.1
+# Core dependencies - Let pip find compatible versions
+streamlit
+langchain
+langgraph
+chromadb
+sentence-transformers
 
 # Document processing
-unstructured[pdf]==0.15.13
-pypdf==5.0.0
-python-dotenv==1.0.1
-pydantic==2.10.0
-pydantic-settings==2.6.0
+unstructured[pdf]
+pypdf
+python-dotenv
+pydantic
+pydantic-settings
 
 # LLM and AI
-groq==0.12.0
-huggingface-hub==0.27.0
+groq
+huggingface-hub
 
 # Monitoring and visualization
-wandb==0.19.1
-plotly==5.24.0
+wandb
+plotly
 
 # OCR and image processing
-pytesseract==0.3.13
-pdf2image==1.17.0
+pytesseract
+pdf2image
 
 # Search and NLP
-rank-bm25==0.2.2
-nltk==3.9.1
-tiktoken==0.8.0
+rank-bm25
+nltk
+tiktoken
 
 # Data science
-scikit-learn==1.6.0
-numpy==1.26.4
-pandas==2.2.2
-pyarrow==18.0.0
+scikit-learn
+numpy
+pandas
+pyarrow
 
 # Additional utilities
-openai==1.55.0
-requests==2.32.3
+openai
+requests
