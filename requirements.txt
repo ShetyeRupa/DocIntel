@@ -1,8 +1,7 @@
-# Core dependencies - FULLY COMPATIBLE versions
+# Core dependencies - USING VERSIONS THAT ACTUALLY EXIST
 streamlit==1.35.0
 langchain==0.0.354
 langgraph==0.0.20
-langchain-core==0.0.17
 chromadb==0.5.23
 sentence-transformers==3.0.1
 
