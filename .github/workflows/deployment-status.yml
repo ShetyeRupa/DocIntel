@@ -1,0 +1,22 @@
+name: Update Deployment Status
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  deployments: write
+  contents: read
+
+jobs:
+  create-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create GitHub Deployment
+        uses: chrnorm/deployment-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: "Hugging Face Spaces"
+          environment-url: "https://huggingface.co/spaces/ShetyeRupa/DocIntel"
+          description: "Live demo on Hugging Face Spaces"
+          initial-status: "success"
