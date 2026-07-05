@@ -779,7 +779,7 @@ If this project helped you, please star it on GitHub!
 **Rupali Shetye**
 
 - [GitHub](https://github.com/ShetyeRupa)
-- [LinkedIn](https://linkedin.com/in/rupali-shetye)
+- [LinkedIn](https://linkedin.com/in/rupa-shetye)
 
 ---
 
