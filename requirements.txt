@@ -1,11 +1,12 @@
-# Core dependencies
+# Core dependencies - Compatible versions
 streamlit==1.35.0
-langchain==0.3.0
+langchain==0.1.0
 langgraph==0.0.20
+langchain-core==0.1.52
 chromadb==0.5.23
 sentence-transformers==3.0.1
 
-# Document processing (use latest stable versions)
+# Document processing
 unstructured[pdf]==0.15.13
 pypdf==5.0.0
 python-dotenv==1.0.1
