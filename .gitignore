@@ -25,6 +25,7 @@ wheels/
 MANIFEST
 
 # Environment
+DocIntel/
 .env
 .venv
 .virtualenv
@@ -77,3 +78,4 @@ htmlcov/
 *.key
 *.crt
 *.p12
+DocIntel/
