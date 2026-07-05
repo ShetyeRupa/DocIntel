@@ -1,4 +1,4 @@
-# Updated import for langchain 0.1.x
+"""PDF parser for document ingestion."""
 from langchain_community.document_loaders import PyPDFLoader, UnstructuredPDFLoader
 from typing import List, Dict, Any
 import os

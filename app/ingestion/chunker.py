@@ -1,6 +1,6 @@
-# Updated import for langchain 0.1.x
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.schema import Document
+"""Semantic chunking for documents."""
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
 from app.config import settings
 from typing import List, Dict, Any
 import hashlib
