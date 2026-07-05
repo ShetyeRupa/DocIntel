@@ -1,0 +1,41 @@
+# Core dependencies - Latest compatible versions
+streamlit>=1.35.0
+langchain>=0.2.0
+langgraph>=0.0.20
+langchain-core>=0.2.0
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# Document processing
+unstructured[pdf]>=0.15.0
+pypdf>=5.0.0
+python-dotenv>=1.0.0
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+
+# LLM and AI
+groq>=0.12.0
+huggingface-hub>=0.27.0
+
+# Monitoring and visualization
+wandb>=0.19.0
+plotly>=5.24.0
+
+# OCR and image processing
+pytesseract>=0.3.13
+pdf2image>=1.17.0
+
+# Search and NLP
+rank-bm25>=0.2.2
+nltk>=3.9.0
+tiktoken>=0.8.0
+
+# Data science
+scikit-learn>=1.6.0
+numpy>=1.26.0
+pandas>=2.2.0
+pyarrow>=18.0.0
+
+# Additional utilities
+openai>=1.55.0
+requests>=2.32.0
