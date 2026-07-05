@@ -76,59 +76,10 @@ def render_settings():
             disabled=is_demo  # Disable in demo
         )
     
-    # API Settings - Hidden completely in demo mode
-    if not is_demo:
-        st.subheader("🔑 API Settings")
-        
-        groq_api_key = st.text_input(
-            "Groq API Key",
-            value=settings.GROQ_API_KEY,
-            type="password",
-            help="Get your API key from console.groq.com"
-        )
-        
-        if st.button("💾 Save Settings", type="primary"):
-            # Save settings to .env
-            env_path = ".env"
-            env_content = []
-            
-            # Read existing .env
-            if os.path.exists(env_path):
-                with open(env_path, "r") as f:
-                    env_content = f.readlines()
-            
-            # Update values
-            updates = {
-                "CHUNK_SIZE": str(chunk_size),
-                "CHUNK_OVERLAP": str(chunk_overlap),
-                "TOP_K": str(top_k),
-                "EMBEDDING_MODEL": embedding_model,
-                "GROQ_MODEL": llm_model,
-                "GROQ_API_KEY": groq_api_key
-            }
-            
-            updated_lines = []
-            for line in env_content:
-                key = line.split("=")[0].strip() if "=" in line else None
-                if key in updates:
-                    updated_lines.append(f"{key}={updates[key]}\n")
-                    del updates[key]
-                else:
-                    updated_lines.append(line)
-            
-            # Add new values
-            for key, value in updates.items():
-                updated_lines.append(f"{key}={value}\n")
-            
-            # Write back
-            with open(env_path, "w") as f:
-                f.writelines(updated_lines)
-            
-            st.success("✅ Settings saved! Restart DocIntel for changes to take effect.")
-    else:
-        # Show masked API status in demo
-        st.subheader("🔑 API Status")
-        st.success("✅ Groq API: **Connected** (Key hidden for security)")
+    # Show API status instead
+    st.subheader("🔑 API Status")
+    st.success("✅ Groq API: **Connected**")
+    st.caption("API keys are stored securely as Hugging Face Secrets.")
     
     # Database Management - Disabled in demo
     st.divider()
